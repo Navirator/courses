@@ -1,9 +1,10 @@
 class String
   def valid()
     arrey['[](){}']
-    for(int i=0; i < arrey.size; i+1)
+    for(int i=0; i < arrey.size; i++)
+
     if (arrey[i]=='[')
-      for (i=1; i<arrey.size; i+1)
+      for (i=1; i<arrey.size; i++)
       if(arrey[i]==']')
       end
       else
@@ -11,9 +12,8 @@ class String
       end
     end
 
-    for(int i=0; i < arrey.size; i+1)
     if (arrey[i]=='(')
-      for (i=1; i<arrey.size; i+1)
+      for (i=1; i<arrey.size; i++)
       if(arrey[i]==')')
       end
       else
@@ -21,9 +21,8 @@ class String
       end
     end
 
-    for(int i=0; i < arrey.size; i+1)
     if (arrey[i]=='{')
-      for (i=1; i<arrey.size; i+1)
+      for (i=1; i<arrey.size; i++)
       if(arrey[i]=='}')
       end
       else
@@ -31,5 +30,6 @@ class String
       end
     end
   end
-end
+  end
+
     p valid()
